@@ -1,0 +1,19 @@
+// main: ../style.less
+
+.social {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.social__link {
+  text-decoration: none;
+  transition: transform 0.1s linear;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.social__link:not(:last-child) {
+  margin-right: 10px;
+}

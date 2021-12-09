@@ -1,0 +1,83 @@
+// main: ../style.less
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.articles__col {
+  width: 33%;
+  padding: 0 15px;
+}
+
+.articles__item {
+  margin-bottom: 30px;
+}
+
+.articles__header {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.articles__date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 77px;
+  height: 77px;
+  color: @white;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 131%;
+  text-align: center;
+  background-color: @black;
+}
+
+.articles__photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.articles__content {
+}
+
+.articles__title {
+  margin-bottom: 5px;
+  color: @black;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 138%;
+  text-transform: uppercase;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.articles__cat {
+  margin-bottom: 20px;
+  color: @black;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 208%;
+  text-transform: uppercase;
+}
+
+.articles__text {
+  margin-bottom: 20px;
+  color: @gray;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 200%;
+}
